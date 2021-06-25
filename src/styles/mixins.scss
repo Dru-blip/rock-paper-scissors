@@ -1,0 +1,22 @@
+@mixin medium {
+  @media (max-width: 750px) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (max-width: 520px) {
+    @content;
+  }
+}
+
+@mixin game {
+  @media (max-width: 465px) {
+    @content;
+  }
+}
+@mixin g {
+  @media (max-width: 410px) {
+    @content;
+  }
+}

@@ -1,0 +1,92 @@
+.state-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  width: 800px;
+
+  button {
+    width: 200px;
+  }
+  @include medium {
+    .go-down {
+      width: 100%;
+      order: 1;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @include small {
+    button {
+      width: 170px;
+      height: 170px;
+      span {
+        width: 130px;
+        height: 130px;
+      }
+    }
+  }
+  @include g {
+    button {
+      width: 130px;
+      height: 130px;
+      span {
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
+}
+
+.result {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+
+  p {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+  }
+  button {
+    margin-top: 1.5rem;
+    background-color: white;
+    width: 11rem;
+    height: 2.3rem;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 7px;
+    color: hsl(229, 64%, 46%);
+  }
+}
+
+.picks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // margin-right: 1rem;
+  p {
+    color: #ffffff;
+    font-size: 1.8rem;
+    @include small {
+      font-size: 1.4rem;
+    }
+    @include g {
+      font-size: 1rem;
+    }
+  }
+  @include g {
+    flex-direction: column-reverse;
+  }
+}
+
+@include g {
+  .go-down {
+    margin-top: 2rem;
+  }
+  // flex-direction: column-reverse;
+}

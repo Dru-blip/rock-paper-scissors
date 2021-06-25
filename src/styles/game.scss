@@ -1,0 +1,79 @@
+.game {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+  width: 599px;
+  @include g {
+    width: 400px;
+    button {
+      width: 130px;
+      height: 130px;
+      span {
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
+}
+.btn-scissors {
+  background: linear-gradient(to bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+.btn-paper {
+  background: linear-gradient(
+    to bottom,
+    hsl(230, 89%, 62%),
+    hsl(230, 89%, 65%)
+  );
+}
+.btn-rock {
+  background: linear-gradient(
+    to bottom,
+    hsl(349, 71%, 52%),
+    hsl(349, 70%, 56%)
+  );
+}
+.btn {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 30px;
+  border: none;
+  cursor: pointer;
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  @include game {
+    width: 160px;
+    height: 160px;
+    span {
+      width: 110px;
+      height: 110px;
+    }
+  }
+}
+.gameStateOn {
+  display: block;
+}
+
+.gameStateOff {
+  display: none;
+}
+
+.btn-game-on {
+  display: none;
+}
